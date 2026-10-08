@@ -6,7 +6,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 model = joblib.load(os.path.join(BASE_DIR, 'Logistic_Regression.pkl'))
 scaler = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))
-model_columns = joblib.load(os.path.join(BASE_DIR, 'columns.pkl'))
+expected_columns = joblib.load(os.path.join(BASE_DIR, 'columns.pkl'))
 
 # model = joblib.load('Logistic_Regression.pkl')
 # scaler = joblib.load('scaler.pkl')
